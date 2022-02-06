@@ -1,7 +1,9 @@
 use dioxus::prelude::*;
 
 fn main() {
-    dioxus::web::launch(App);
+    let mut vdom = VirtualDom::new(App);
+    let _ = vdom.rebuild();
+    let text = dioxus::ssr::render_vdom(&vdom);
 }
 
 fn App(cx: Scope) -> Element {
