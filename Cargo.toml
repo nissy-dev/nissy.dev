@@ -1,9 +1,7 @@
-[package]
-name = "nissy-dev"
-version = "0.1.0"
-edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
-dioxus = { version = "0.1.8", features = ["ssr"] }
+# monorepo only work when using virtual manifest
+# see: https://github.com/rust-lang/cargo/issues/7467#issuecomment-867632379
+[workspace]
+members = [
+    "packages/app",
+    "packages/worker",
+]
