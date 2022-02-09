@@ -1,4 +1,4 @@
-name = "test"
+name = "nissy-dev"
 type = "javascript"
 workers_dev = true
 compatibility_date = "2022-02-07"

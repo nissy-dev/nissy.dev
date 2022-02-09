@@ -15,7 +15,7 @@ With `wrangler`, you can build, test, and deploy your Worker with the following 
 
 ```bash
 # compiles your project to WebAssembly and will warn of any issues
-wrangler build 
+wrangler build
 
 # run your Worker in an ideal development workflow (with a local server, file watcher & more)
 wrangler dev
@@ -38,4 +38,3 @@ Read more about this on the [`workers-rs` project README](https://github.com/clo
 
 If you have any problems with the `worker` crate, please open an issue on the upstream project 
 issue tracker on the [`workers-rs` repository](https://github.com/cloudflare/workers-rs).
-
