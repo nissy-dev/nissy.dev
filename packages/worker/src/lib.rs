@@ -1,4 +1,4 @@
-use app;
+// use app;
 use dioxus::prelude::*;
 use worker::*;
 
@@ -26,7 +26,8 @@ pub async fn main(req: Request, env: Env, _ctx: worker::Context) -> Result<Respo
 }
 
 fn handle_request<D>(_req: Request, _ctx: RouteContext<D>) -> Result<Response> {
-    let mut vdom = VirtualDom::new(app::app);
+    let app: Component = |cx| cx.render(rsx!(div {"hello world!"}));
+    let mut vdom = VirtualDom::new(app);
     let _ = vdom.rebuild();
     Response::from_html(dioxus::ssr::render_vdom(&vdom))
 }
