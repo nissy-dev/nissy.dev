@@ -1,7 +1,9 @@
-// use app;
+use app;
+use build_html::build_html;
 use dioxus::prelude::*;
 use worker::*;
 
+mod build_html;
 mod utils;
 
 fn log_request(req: &Request) {
@@ -15,7 +17,7 @@ fn log_request(req: &Request) {
 }
 
 #[event(fetch)]
-pub async fn main(req: Request, env: Env, _ctx: worker::Context) -> Result<Response> {
+pub async fn main(req: Request, env: Env) -> Result<Response> {
     log_request(&req);
 
     // Get more helpful error messages written to the console in the case of a panic.
@@ -26,8 +28,7 @@ pub async fn main(req: Request, env: Env, _ctx: worker::Context) -> Result<Respo
 }
 
 fn handle_request<D>(_req: Request, _ctx: RouteContext<D>) -> Result<Response> {
-    let app: Component = |cx| cx.render(rsx!(div {"hello world!"}));
-    let mut vdom = VirtualDom::new(app);
+    let mut vdom = VirtualDom::new(app::app);
     let _ = vdom.rebuild();
-    Response::from_html(dioxus::ssr::render_vdom(&vdom))
+    Response::from_html(build_html(&dioxus::ssr::render_vdom(&vdom)))
 }
