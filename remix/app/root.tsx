@@ -20,12 +20,12 @@ export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
 export default function App() {
   return (
-    <html lang="en">
+    <html lang="en" className="w-full h-full">
       <head>
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="w-full h-full bg-gray-100">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
