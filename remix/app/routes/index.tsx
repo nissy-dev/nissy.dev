@@ -13,7 +13,7 @@ export default function Index() {
   return (
     <div className="w-full h-full">
       <main className="w-full pt-24 flex flex-col justify-center items-center">
-        <img className="w-32 shadow-2xl" src={icon} alt="" />
+        <img className="w-32 shadow-2xl rounded" src={icon} alt="" />
         <h1 className="text-4xl mt-8 font-bold text-orange-500">nissy.dev</h1>
         <p className="text-xl my-6 text-orange-400 text-center w-3/5 md:w-full">
           I’m a software engineer from Japan 👋
@@ -22,7 +22,7 @@ export default function Index() {
           <a
             className="py-4 px-8 text-orange-500"
             href={meta.githubLink}
-            title="github"
+            title="GitHub"
           >
             <FaGithub className="w-16 h-16" />
             <span className="inline-block w-full py-2 text-center">GitHub</span>
@@ -30,7 +30,7 @@ export default function Index() {
           <a
             className="py-4 px-8 text-orange-500"
             href={meta.blogLink}
-            title="blog"
+            title="Blog"
           >
             <FaBook className="w-16 h-16" />
             <span className="inline-block w-full py-2 text-center">Blog</span>
@@ -38,7 +38,7 @@ export default function Index() {
           <a
             className="py-4 px-8 text-orange-500"
             href={meta.resumeLink}
-            title="resume"
+            title="Resume"
           >
             <FaFileAlt className="w-16 h-16" />
             <span className="inline-block w-full py-2 text-center">Resume</span>
@@ -46,7 +46,7 @@ export default function Index() {
           <a
             className="py-4 px-8 text-orange-500"
             href={meta.twitterLink}
-            title="twitter"
+            title="Twitter"
           >
             <FaTwitter className="w-16 h-16" />
             <span className="inline-block w-full py-2 text-center">
