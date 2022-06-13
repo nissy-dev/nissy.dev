@@ -1,6 +1,6 @@
 import { FaGithub, FaTwitter, FaBook, FaFileAlt } from "react-icons/fa";
 
-import icon from "./images/icon-192x192.png";
+import icon from "../../public/images/icon-192x192.png";
 
 const meta = {
   githubLink: "https://github.com/nissy-dev",

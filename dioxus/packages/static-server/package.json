@@ -1,0 +1,13 @@
+{
+  "name": "static-server",
+  "version": "0.0.1",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler publish",
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^2.0.9"
+  }
+}
