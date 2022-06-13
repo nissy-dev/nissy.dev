@@ -1,4 +1,4 @@
-name = "nissy-dev"
+name = "profile"
 workers_dev = true
 
 main = "build/worker/shim.mjs"
