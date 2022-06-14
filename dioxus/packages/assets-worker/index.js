@@ -1,11 +1,11 @@
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    const key = url.pathname.slice(1);
+    const key = url.pathname.split("/").pop();
 
     switch (request.method) {
       case "GET":
-        const object = await env.MY_BUCKET.get(key);
+        const object = await env.PROFILE_ASSETS.get(key);
 
         if (!object || !object.body) {
           return new Response("Object Not Found", { status: 404 });

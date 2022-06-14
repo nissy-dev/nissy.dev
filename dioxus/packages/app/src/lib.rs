@@ -12,7 +12,7 @@ pub fn app(cx: Scope) -> Element {
                     class: "w-32 h-32 shadow-2xl rounded",
                     width: "640",
                     height: "640",
-                    src: "https://static-server.nissy-dev.workers.dev/snork.webp",
+                    src: "/assets/snork.webp",
                 },
                 h1 {
                     class: "text-4xl mt-8 font-bold text-orange-500",

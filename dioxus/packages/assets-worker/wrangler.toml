@@ -1,0 +1,10 @@
+name = "profile-assets"
+main = "index.js"
+compatibility_date = "2022-04-18"
+
+account_id = "462c19255117ae9d47ff890a3ede0383"
+workers_dev = true
+
+[[r2_buckets]]
+binding = "PROFILE_ASSETS"
+bucket_name = "profile-assets"
