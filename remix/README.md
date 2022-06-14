@@ -1,3 +1,0 @@
-# Profile site with remix + cloudflare workers
-
-Working in progress...
