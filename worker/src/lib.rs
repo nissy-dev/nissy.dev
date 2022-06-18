@@ -1,8 +1,8 @@
-use app;
 use build_html::build_html;
 use dioxus::prelude::*;
 use worker::*;
 
+mod app;
 mod build_html;
 mod utils;
 
