@@ -2,7 +2,7 @@
 
 ## Setup
 
-Install the specific versions of Rust and Node.js.
+Install Rust and Node.js.
 
 ```sh
 asdf install rust 1.61.0 && asdf local rust 1.61.0
