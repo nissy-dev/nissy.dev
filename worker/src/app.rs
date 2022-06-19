@@ -4,12 +4,14 @@ use dioxus_free_icons::icons::fa_brands_icons::{FaGithub, FaTwitter};
 use dioxus_free_icons::icons::fa_solid_icons::{FaBook, FaFileLines};
 use dioxus_free_icons::Icon;
 
+#[derive(PartialEq, Props)]
 struct IconLinkProps {
     href: String,
     name: String,
     icon: Icon<'static>,
 }
 
+#[allow(non_snake_case)]
 fn IconLink(cx: Scope<IconLinkProps>) -> Element {
     cx.render(rsx! {
         a {
@@ -51,23 +53,23 @@ pub fn app(cx: Scope) -> Element {
                 div {
                     class: "grid grid-cols-2 grid-flow-row md:flex md:flex-row",
                     IconLink {
-                        href: "https://github.com/nissy-dev",
-                        title: "GitHub",
+                        href: "https://github.com/nissy-dev".to_string(),
+                        name: "GitHub".to_string(),
                         icon: FaGithub,
                     },
                     IconLink {
-                        href: "https://blog.nissy.dev",
-                        title: "Blog",
+                        href: "https://blog.nissy.dev".to_string(),
+                        name: "Blog".to_string(),
                         icon: FaBook,
                     },
                     IconLink {
-                        href: "https://github.com/nissy-dev/resume",
-                        title: "Resume",
+                        href: "https://github.com/nissy-dev/resume".to_string(),
+                        name: "Resume".to_string(),
                         icon: FaFileLines,
                     }
                     IconLink {
-                        href: "https://twitter.com/nissy_dev",
-                        title: "Twitter",
+                        href: "https://twitter.com/nissy_dev".to_string(),
+                        name: "Twitter".to_string(),
                         icon: FaTwitter,
                     }
                 }
