@@ -175,6 +175,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "dioxus-free-icons"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "246b8cd8ab609dff6b9a933368ec82b2613bca91040ca5154b5751a791e8f648"
+dependencies = [
+ "dioxus",
+]
+
+[[package]]
 name = "dioxus-hooks"
 version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -924,6 +933,7 @@ dependencies = [
  "cfg-if 0.1.10",
  "console_error_panic_hook",
  "dioxus",
+ "dioxus-free-icons",
  "serde_json",
  "worker 0.0.9",
 ]
