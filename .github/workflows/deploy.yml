@@ -1,8 +1,9 @@
 name: deploy
 
 on:
-  branches:
-    - main
+  push:
+    branches:
+      - main
 
 jobs:
   deploy-assets-worker:
