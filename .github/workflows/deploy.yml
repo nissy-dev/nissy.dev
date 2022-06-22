@@ -1,0 +1,44 @@
+name: deploy
+
+on:
+  branches:
+    - main
+
+jobs:
+  deploy-assets-worker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Configure wrangler v2
+        run: |
+          mkdir -p ~/.wrangler/config/
+          echo "api_token=\"${CF_API_TOKEN}\"" > ~/.wrangler/config/default.toml
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - name: Deploy
+        working-directory: ./assets-worker
+        run: npm ci && npm run deploy
+
+  deploy-worker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Configure wrangler v2
+        run: |
+          mkdir -p ~/.wrangler/config/
+          echo "api_token=\"${CF_API_TOKEN}\"" > ~/.wrangler/config/default.toml
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - name: Use Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: nightly
+      - name: Install WASM dependecies
+        run: rustup target add wasm32-wasi && cargo install wasm-pack
+      - name: Deploy
+        working-directory: ./worker
+        run: npm ci && npm run deploy
