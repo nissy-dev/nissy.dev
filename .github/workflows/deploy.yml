@@ -32,6 +32,15 @@ jobs:
         uses: actions-rs/toolchain@v1
         with:
           toolchain: nightly
+      - uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            target/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
       - name: Install WASM dependecies
         run: rustup target add wasm32-wasi && cargo install wasm-pack
       - name: Deploy
@@ -39,3 +48,4 @@ jobs:
         run: npm ci && npm run deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
