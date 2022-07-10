@@ -2,17 +2,18 @@ use dioxus::prelude::*;
 
 use dioxus_free_icons::icons::fa_brands_icons::{FaGithub, FaTwitter};
 use dioxus_free_icons::icons::fa_solid_icons::{FaBook, FaFileLines};
-use dioxus_free_icons::Icon;
+
+use dioxus_free_icons::{Icon, IconShape};
 
 #[derive(PartialEq, Props)]
-struct IconLinkProps {
+struct IconLinkProps<T: IconShape + Copy> {
     href: String,
     name: String,
-    icon: Icon<'static>,
+    icon: T,
 }
 
 #[allow(non_snake_case)]
-fn IconLink(cx: Scope<IconLinkProps>) -> Element {
+fn IconLink<T: IconShape + Copy>(cx: Scope<IconLinkProps<T>>) -> Element {
     cx.render(rsx! {
         a {
             class: "py-4 px-8 text-orange-500",
@@ -65,7 +66,7 @@ pub fn app(cx: Scope) -> Element {
                     IconLink {
                         href: "https://github.com/nissy-dev/resume".to_string(),
                         name: "Resume".to_string(),
-                        icon: FaFileLines,
+                        icon: FaFileLines
                     }
                     IconLink {
                         href: "https://twitter.com/nissy_dev".to_string(),
