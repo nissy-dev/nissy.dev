@@ -1,11 +1,7 @@
 {
   "private": true,
   "version": "0.0.0",
-  "scripts": {
-    "deploy": "wrangler publish",
-    "dev": "wrangler dev"
-  },
   "devDependencies": {
-    "wrangler": "^2.0.14"
+    "wrangler": "^0.0.0-c0d7699"
   }
 }
