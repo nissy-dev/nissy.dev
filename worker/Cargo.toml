@@ -22,7 +22,7 @@ serde_json = "1.0.67"
 console_error_panic_hook = { version = "0.1.1", optional = true }
 
 dioxus = { version = "0.2.4", features = ["ssr"] }
-dioxus-free-icons = { version = "0.3.1", features = ["font-awesome-brands", "font-awesome-solid"] }
+dioxus-free-icons = { version = "0.5.0", features = ["font-awesome-brands", "font-awesome-solid"] }
 
 [profile.release]
 lto = true
