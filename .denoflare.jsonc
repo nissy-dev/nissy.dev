@@ -1,0 +1,30 @@
+{
+    // This jsonc file supports comments and trailing commas!
+
+    // optional schema to get auto-completions when editing this file in vscode, etc
+    "$schema": "https://raw.githubusercontent.com/skymethod/denoflare/v0.5.3/common/config.schema.json",
+
+    // define script configurations by name, and their associated bindings and options
+    // you can then simply refer to them by name in your denoflare commands
+    // note the same script source can be specified more than once with different configurations (local vs prod etc)
+    "scripts": {
+        "profile-worker": {
+            "path": "src/index.ts",
+            "bindings": {
+                "bucket": { "bucketName": "profile-assets" }
+            },
+            "localPort": 3002
+        }
+    },
+
+    // define one or more named profiles to specify Cloudflare API token credentials
+    // you can then refer to them by name in your denoflare commands, using --profile <profile-name>
+    // or if no --profile is specified, the default profile will be used
+    // the default profile is either the only profile specified (as shown here), or the one marked with default: true
+    "profiles": {
+        "account1": {
+            "accountId": "462c19255117ae9d47ff890a3ede0383",
+            "apiToken": ""
+        }
+    }
+}

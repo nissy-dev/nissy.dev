@@ -1,0 +1,6 @@
+{
+    "tasks": {
+        "wasmbuild": "./build.sh",
+        "dev": "denoflare serve profile-worker --config .denoflare.jsonc"
+    }
+}
