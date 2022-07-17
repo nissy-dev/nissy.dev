@@ -1,7 +1,0 @@
-{
-  "private": true,
-  "version": "0.0.0",
-  "devDependencies": {
-    "wrangler": "^0.0.0-c0d7699"
-  }
-}

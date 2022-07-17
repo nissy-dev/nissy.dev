@@ -1,5 +1,5 @@
 {
-  "name": "assets-worker",
+  "name": "worker",
   "version": "0.0.1",
   "main": "index.js",
   "private": true,
@@ -8,6 +8,7 @@
     "dev": "wrangler dev"
   },
   "devDependencies": {
-    "wrangler": "^2.0.9"
+    "@cloudflare/workers-wasi": "^0.0.5",
+    "wrangler": "^0.0.0-c0d7699"
   }
 }

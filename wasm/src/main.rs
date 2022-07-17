@@ -1,5 +1,8 @@
-// TODO: dioxus-helmet を使うようにする
-pub fn build_html(body_str: &str) -> String {
+use dioxus::prelude::*;
+
+mod app;
+
+fn build_html(body_str: &str) -> String {
     format!(
         "<!DOCTYPE html>
 <html lang=\"en\">
@@ -16,4 +19,11 @@ pub fn build_html(body_str: &str) -> String {
 </html>",
         body_str
     )
+}
+
+fn main() {
+    let mut vdom = VirtualDom::new(app::app);
+    vdom.rebuild();
+    let html = build_html(&dioxus::ssr::render_vdom(&vdom));
+    print!("{html}");
 }

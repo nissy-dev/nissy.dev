@@ -1,21 +1,13 @@
-# worker
+# assets-server
 
-This worker serves my profile page by [dixous](https://dioxuslabs.com/) and SSR.
-
-## Setup for WASM build
-
-Add rustup target and install `wasm-pack` manually.
-
-```sh
-rustup target add wasm32-unknown-unknown && cargo install wasm-pack
-```
+This is a temporal worker for serving static files. 
+[See: Worker-rs doesn't support R2](https://github.com/cloudflare/workers-rs/issues/181)
 
 ## Commands
 
-```sh
-// dev
-npm run dev
+Can't use `npm run dev` because [Miniflare doesn't support R2](https://github.com/cloudflare/miniflare/issues/276)
 
+```sh
 // deploy
 npm run deploy
 ```
