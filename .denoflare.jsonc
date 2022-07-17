@@ -15,16 +15,5 @@
             },
             "localPort": 3002
         }
-    },
-
-    // define one or more named profiles to specify Cloudflare API token credentials
-    // you can then refer to them by name in your denoflare commands, using --profile <profile-name>
-    // or if no --profile is specified, the default profile will be used
-    // the default profile is either the only profile specified (as shown here), or the one marked with default: true
-    "profiles": {
-        "account1": {
-            "accountId": "462c19255117ae9d47ff890a3ede0383",
-            "apiToken": ""
-        }
     }
 }

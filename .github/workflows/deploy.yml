@@ -6,46 +6,19 @@ on:
       - main
 
 jobs:
-  deploy-assets-worker:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16
-      - name: Deploy
-        working-directory: ./assets-worker
-        run: npm ci && npm run deploy
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-
   deploy-worker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js
-        uses: actions/setup-node@v1
+      - uses: denoland/setup-deno@v1
         with:
-          node-version: 16
-      - name: Use Rust
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: nightly
-      - uses: actions/cache@v3
-        with:
-          path: |
-            ~/.cargo/bin/
-            ~/.cargo/registry/index/
-            ~/.cargo/registry/cache/
-            ~/.cargo/git/db/
-            target/
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
-      - name: Install WASM dependecies
-        run: rustup target add wasm32-wasi && cargo install wasm-pack
+          deno-version: v1.x
+      - name: Install Denoflare
+        run:
+          deno install --unstable --allow-read --allow-net --allow-env --allow-run --name denoflare --force \
+          https://raw.githubusercontent.com/skymethod/denoflare/v0.5.3/cli/cli.ts
       - name: Deploy
-        working-directory: ./worker
-        run: npm ci && npm run deploy
+        run: deno task publish
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
