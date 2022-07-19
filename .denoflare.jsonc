@@ -1,0 +1,12 @@
+{
+  "$schema": "https://raw.githubusercontent.com/skymethod/denoflare/v0.5.3/common/config.schema.json",
+  "scripts": {
+    "profile-worker": {
+      "path": "src/index.ts",
+      "bindings": {
+        "bucket": { "bucketName": "profile-assets" }
+      },
+      "localPort": 3002
+    }
+  }
+}
