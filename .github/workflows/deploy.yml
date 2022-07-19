@@ -14,9 +14,9 @@ jobs:
         with:
           deno-version: v1.x
       - name: Install Denoflare
-        run:
-          deno install --unstable --allow-read --allow-net --allow-env --allow-run --name denoflare --force \
-          https://raw.githubusercontent.com/skymethod/denoflare/fd922e410602d7c0950f8af014365d196e8cabb2/cli/cli.ts
+        run: |
+          deno install --unstable --allow-read --allow-net --allow-env --allow-run --name denoflare \
+          --force https://raw.githubusercontent.com/skymethod/denoflare/fd922e410602d7c0950f8af014365d196e8cabb2/cli/cli.ts
       - name: Deploy
         run: deno task publish
         env:
