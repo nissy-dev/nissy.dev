@@ -1,4 +1,6 @@
 {
   "deno.enable": true,
-  "deno.path": "/Users/nissy-dev/.asdf/shims/deno"
+  "deno.lint": true,
+  "deno.path": "/Users/nissy-dev/.asdf/shims/deno",
+  "editor.defaultFormatter": "denoland.vscode-deno"
 }
