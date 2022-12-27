@@ -1,5 +1,5 @@
 [package]
-name = "renderer"
+name = "ssr-on-edge"
 version = "0.0.1"
 edition = "2021"
 
@@ -7,9 +7,6 @@ edition = "2021"
 crate_type = ["cdylib"]
 
 [profile.release]
-codegen-units = 1
-incremental = true
-lto = true
 opt-level = "z"
 
 [dependencies]
