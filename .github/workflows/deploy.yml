@@ -1,32 +1,37 @@
-# name: deploy
-# env:
-#   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-#   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-# on:
-#   push:
-#     branches:
-#       - main
-#       - migrate-vercel-edge-functions
-# jobs:
-#   deploy:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v3
-#       - name: Use Node.js
-#         uses: actions/setup-node@v3
-#         with:
-#           node-version: 18.6.0
-#           cache: "npm"
-#       - run: npm ci
-#       - name: Setup Rust
-#         uses: actions-rs/toolchain@v1
-#         with:
-#           toolchain: nightly
-#       - name: Setup wasm
-#         run: rustup target add wasm32-unknown-unknown
-#       - name: Install wasm-pack
-#         run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
-#       - name: Build wasm
-#         run: npm run wasmpack
-#       - name: Deploy Project Artifacts to Vercel
-#         run: npm run deploy:prod -- --token=${{ secrets.VERCEL_TOKEN }}
+name: deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: deploy
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.6.0
+          cache: "npm"
+      - run: npm ci
+      - name: Setup Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: nightly
+      - name: Setup wasm
+        run: rustup target add wasm32-unknown-unknown
+      - name: Install wasm-pack
+        run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+      - name: Build wasm
+        run: npm run wasmpack
+      - name: Pull vercel environment information
+        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      - name: Deploy project artifacts to vercel
+        run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
