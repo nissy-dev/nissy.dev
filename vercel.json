@@ -4,6 +4,6 @@
     "framework": null,
     "outputDirectory": ".",
     "rewrites": [
-        { "source": "/", "destination": "/api/render.ts" }
+        { "source": "/", "destination": "/api/render" }
     ]
 }

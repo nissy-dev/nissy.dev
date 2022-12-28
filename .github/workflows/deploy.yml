@@ -3,10 +3,12 @@ on:
   push:
     branches:
       - main
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: deploy
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js
@@ -23,15 +25,9 @@ jobs:
         run: rustup target add wasm32-unknown-unknown
       - name: Install wasm-pack
         run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
-      - name: Build wasm
-        run: npm run wasmpack
+      - name: Build wasm and css
+        run: npm run build:all
       - name: Pull vercel environment information
         run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
-        env:
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
       - name: Deploy project artifacts to vercel
         run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }}
-        env:
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}

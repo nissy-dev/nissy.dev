@@ -15,11 +15,11 @@
     "url": "git+https://github.com/nissy-dev/nissy.dev.git"
   },
   "scripts": {
-    "wasmpack": "wasm-pack build wasm --target web --release",
-    "css": "tailwindcss -o public/style.css --minify",
-    "dev:all": "npm run wasmpack && npm run css && vercel dev",
-    "deploy:pre": "vercel deploy",
-    "deploy:prod": "vercel deploy --prod"
+    "build:wasm": "wasm-pack build wasm --target web --release",
+    "build:css": "tailwindcss -o public/style.css --minify",
+    "build:all": "npm run build:wasm && npm run build:css",
+    "dev:all": "npm run build:all && vercel dev",
+    "deploy:preview": "vercel deploy"
   },
   "devDependencies": {
     "tailwindcss": "^3.2.4",
