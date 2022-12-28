@@ -1,0 +1,9 @@
+/*
+!api
+!public
+!wasm
+!vercel.json
+
+wasm/src
+wasm/target
+wasm/Cargo*

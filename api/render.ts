@@ -1,5 +1,5 @@
 // @ts-ignore
-import wasm from "../wasm/pkg/ssr_on_edge_bg.wasm?module";
+import wasm from "../wasm/pkg/ssr_bg.wasm?module";
 
 export const config = {
   runtime: "edge",

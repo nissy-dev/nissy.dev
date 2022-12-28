@@ -14,6 +14,12 @@
     "type": "git",
     "url": "git+https://github.com/nissy-dev/nissy.dev.git"
   },
+  "scripts": {
+    "wasmpack": "wasm-pack build wasm --target web --release",
+    "dev:all": "npm run wasmpack && vercel dev",
+    "deploy:pre": "vercel deploy",
+    "deploy:prod": "vercel deploy --prod"
+  },
   "devDependencies": {
     "vercel": "^28.10.1"
   }

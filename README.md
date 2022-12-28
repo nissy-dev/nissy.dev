@@ -1,23 +1,19 @@
 # nissy.dev
 
-## Setup
+## Set up
 
-Set CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN.
+Install Rust and Node.js. And then, install wasm-pack and for building WASM. 
 
-```
-export CLOUDFLARE_ACCOUNT_ID=XXXXXXXXXXXXXXXXXXX
-export CLOUDFLARE_API_TOKEN=XXXXXXXXXXXXXXXXXXX
+```sh
+cargo install wasm-pack
 ```
 
 ## Development
 
 ```sh
 // build wasm file
-wasm-pack build wasm --target web
+npm run wasmpack
 
 // run dev server
-npx vercel dev
-
-// deploy
-npx vercel deploy
+npm run dev:all
 ```
