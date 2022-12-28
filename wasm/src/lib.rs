@@ -11,6 +11,7 @@ fn build_html(body_str: &str) -> String {
   <title>nissy.dev</title>
   <meta charset=\"utf-8\">
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
+  <meta name=\"description\" content=\"This is a profile site for nissy.\" />
   <script src=\"https://cdn.tailwindcss.com\"></script>
   <link rel=\"icon\" href=\"/public/favicon.ico\" />
 </head>

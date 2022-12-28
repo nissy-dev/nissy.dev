@@ -42,6 +42,8 @@ pub fn app(cx: Scope) -> Element {
                     width: "640",
                     height: "640",
                     src: "/public/snork.webp",
+                    decoding: "async",
+                    alt: "nissy",
                 },
                 h1 {
                     class: "text-4xl mt-8 font-bold text-orange-500",
