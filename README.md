@@ -17,4 +17,7 @@ npm run wasmpack
 
 // run dev server
 npm run dev:all
+
+// deploy
+npm run deploy:prod
 ```
