@@ -12,7 +12,7 @@ fn build_html(body_str: &str) -> String {
   <meta charset=\"utf-8\">
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
   <meta name=\"description\" content=\"This is a profile site for nissy.\" />
-  <script src=\"https://cdn.tailwindcss.com\"></script>
+  <link href=\"/public/style.css\" rel=\"stylesheet\" />
   <link rel=\"icon\" href=\"/public/favicon.ico\" />
 </head>
 <body>

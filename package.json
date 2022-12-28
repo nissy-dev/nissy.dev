@@ -16,11 +16,13 @@
   },
   "scripts": {
     "wasmpack": "wasm-pack build wasm --target web --release",
-    "dev:all": "npm run wasmpack && vercel dev",
+    "css": "tailwindcss -o public/style.css --minify",
+    "dev:all": "npm run wasmpack && npm run css && vercel dev",
     "deploy:pre": "vercel deploy",
     "deploy:prod": "vercel deploy --prod"
   },
   "devDependencies": {
+    "tailwindcss": "^3.2.4",
     "vercel": "^28.10.1"
   }
 }
