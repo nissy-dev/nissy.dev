@@ -1,28 +1,23 @@
 # nissy.dev
 
-## Setup
+## Set up
 
-Install Rust, Deno and direnv.
+Install Rust and Node.js. And then, add wasm target and install wasm-pack and for building WASM.
 
 ```sh
-asdf install rust 1.61.0 && asdf local rust 1.61.0
-asdf install deno 1.23.4 && asdf local nodejs 1.23.4
-asdf install direnv 2.32.1 && asdf local direnv 2.32.1
-```
-
-Set CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN.
-
-```
-export CLOUDFLARE_ACCOUNT_ID=XXXXXXXXXXXXXXXXXXX
-export CLOUDFLARE_API_TOKEN=XXXXXXXXXXXXXXXXXXX
+rustup target add wasm32-unknown-unknown
+curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
 ```
 
 ## Development
 
 ```sh
 // build wasm file
-deno task wasmbuild
+npm run wasmpack
 
 // run dev server
-deno task dev
+npm run dev:all
+
+// deploy
+npm run deploy:prod
 ```

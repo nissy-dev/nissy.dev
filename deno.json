@@ -1,7 +1,0 @@
-{
-  "tasks": {
-    "wasmbuild": "./wasm_build.sh",
-    "dev": "denoflare serve profile-worker --config .denoflare.jsonc --account-id $CLOUDFLARE_ACCOUNT_ID  --api-token $CLOUDFLARE_API_TOKEN",
-    "publish": "denoflare push profile-worker --config .denoflare.jsonc --account-id $CLOUDFLARE_ACCOUNT_ID  --api-token $CLOUDFLARE_API_TOKEN"
-  }
-}

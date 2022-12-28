@@ -1,0 +1,26 @@
+{
+  "name": "nissy.dev",
+  "description": "This is a profile page",
+  "version": "0.0.1",
+  "author": "nissy-dev <nd.12021218@gmail.com> (https://github.com/nissy-dev)",
+  "bugs": {
+    "url": "https://github.com/nissy-dev/nissy.dev/issues"
+  },
+  "homepage": "https://github.com/nissy-dev/nissy.dev",
+  "license": "MIT",
+  "main": "",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nissy-dev/nissy.dev.git"
+  },
+  "scripts": {
+    "wasmpack": "wasm-pack build wasm --target web --release",
+    "dev:all": "npm run wasmpack && vercel dev",
+    "deploy:pre": "vercel deploy",
+    "deploy:prod": "vercel deploy --prod"
+  },
+  "devDependencies": {
+    "vercel": "^28.10.1"
+  }
+}

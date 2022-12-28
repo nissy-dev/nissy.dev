@@ -41,7 +41,7 @@ pub fn app(cx: Scope) -> Element {
                     class: "w-32 h-32 shadow-2xl rounded",
                     width: "640",
                     height: "640",
-                    src: "/assets/snork.webp",
+                    src: "/public/snork.webp",
                 },
                 h1 {
                     class: "text-4xl mt-8 font-bold text-orange-500",
