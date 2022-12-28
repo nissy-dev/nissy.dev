@@ -8,7 +8,7 @@ on:
       - main
       - migrate-vercel-edge-functions
 jobs:
-  Deploy-Production:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -28,7 +28,5 @@ jobs:
         run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
       - name: Build wasm
         run: npm run wasmpack
-      - name: Pull Vercel Environment Information
-        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
       - name: Deploy Project Artifacts to Vercel
-        run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }}
+        run: npm run deploy:prod -- --token=${{ secrets.VERCEL_TOKEN }}
