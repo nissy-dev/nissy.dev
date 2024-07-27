@@ -51,7 +51,7 @@ pub fn app(cx: Scope) -> Element {
                 },
                 p {
                     class: "text-xl my-6 text-orange-400 text-center w-3/5 md:w-full",
-                    "I'm a software engineer with particular expertise in front-end 🇯🇵 👋",
+                    "I'm a software engineer mainly working on web development 🇯🇵 👋",
                 }
                 div {
                     class: "grid grid-cols-2 grid-flow-row md:flex md:flex-row",
