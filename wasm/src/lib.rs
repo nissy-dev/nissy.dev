@@ -1,4 +1,3 @@
-use dioxus::prelude::*;
 use wasm_bindgen::prelude::*;
 
 mod app;
@@ -25,7 +24,5 @@ fn build_html(body_str: &str) -> String {
 
 #[wasm_bindgen]
 pub fn render() -> String {
-    let mut vdom = VirtualDom::new(app::app);
-    let _ = vdom.rebuild();
-    build_html(&dioxus::ssr::render_vdom(&vdom))
+    build_html(&dioxus_ssr::render_element(app::app()))
 }

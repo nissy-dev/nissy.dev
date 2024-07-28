@@ -5,34 +5,34 @@ use dioxus_free_icons::icons::fa_solid_icons::{FaBook, FaFileLines};
 
 use dioxus_free_icons::{Icon, IconShape};
 
-#[derive(PartialEq, Props)]
-struct IconLinkProps<T: IconShape + Copy> {
+#[derive(PartialEq, Props, Clone)]
+struct IconLinkProps<T: IconShape + Clone + PartialEq + 'static> {
     href: String,
     name: String,
     icon: T,
 }
 
 #[allow(non_snake_case)]
-fn IconLink<T: IconShape + Copy>(cx: Scope<IconLinkProps<T>>) -> Element {
-    cx.render(rsx! {
+fn IconLink<T: IconShape + Clone + PartialEq + 'static>(props: IconLinkProps<T>) -> Element {
+    rsx! {
         a {
             class: "py-4 px-8 text-orange-500",
-            href: "{cx.props.href}",
-            title: "{cx.props.name}",
+            href: "{props.href}",
+            title: "{props.name}",
             Icon {
                 class: "w-16 h-16",
-                icon: cx.props.icon,
+                icon: {props.icon},
             },
             span {
                 class: "inline-block w-full py-2 text-center",
-                "{cx.props.name}",
+                "{props.name}",
             }
-        },
-    })
+        }
+    }
 }
 
-pub fn app(cx: Scope) -> Element {
-    cx.render(rsx!(
+pub fn app() -> Element {
+    rsx!(
         div {
             class: "w-full h-full",
             main {
@@ -78,5 +78,5 @@ pub fn app(cx: Scope) -> Element {
                 }
             }
         }
-    ))
+    )
 }
