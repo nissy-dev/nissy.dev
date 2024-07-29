@@ -22,7 +22,7 @@
     "deploy:preview": "vercel deploy"
   },
   "devDependencies": {
-    "tailwindcss": "^3.2.4",
-    "vercel": "^28.10.1"
+    "tailwindcss": "3.4.7",
+    "vercel": "35.2.1"
   }
 }
