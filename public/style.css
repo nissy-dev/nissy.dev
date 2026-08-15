@@ -12,12 +12,11 @@
     "Segoe UI",
     sans-serif;
   line-height: 1.5;
-  color: #431407;
-  background: #fffaf5;
+  color: #000;
+  background: #fafafa;
 }
 
 body {
-  min-width: 320px;
   min-height: 100vh;
   margin: 0;
 }
@@ -40,7 +39,7 @@ main {
 
 h1 {
   margin: 2rem 0 0;
-  color: #c2410c;
+  color: #ef6c35;
   font-size: 2.25rem;
   line-height: 1.1;
 }
@@ -48,39 +47,191 @@ h1 {
 .intro {
   max-width: 38rem;
   margin: 1.5rem 0;
-  color: #c2410c;
+  color: #ef6c35;
   font-size: 1.25rem;
   text-align: center;
 }
 
 nav {
   display: grid;
-  width: min(100%, 34rem);
+  width: min(100%, 42rem);
   grid-template-columns: repeat(2, 1fr);
 }
 
 nav a {
   padding: 1.25rem 1rem;
-  color: #c2410c;
+  color: #ef6c35;
   font-weight: 650;
   text-align: center;
   text-decoration-thickness: 0.1em;
   text-underline-offset: 0.35em;
 }
 
-nav a:hover {
-  color: #7c2d12;
-}
-
 nav a:focus-visible {
   border-radius: 0.25rem;
-  outline: 0.2rem solid #fb923c;
+  outline: 0.2rem solid #ef6c35;
   outline-offset: 0.15rem;
+}
+
+.content-page {
+  width: min(100%, 46rem);
+  min-height: 100vh;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding-block: clamp(2rem, 8vw, 6rem);
+}
+
+.page-header {
+  padding-bottom: 0;
+}
+
+.back-link {
+  color: #ef6c35;
+  font-weight: 650;
+  text-underline-offset: 0.25em;
+}
+
+.eyebrow {
+  margin: 3rem 0 0.5rem;
+  color: #ef6c35;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.page-header h1 {
+  margin: 0;
+}
+
+.page-header > p:last-child {
+  max-width: 36rem;
+  margin: 1rem 0 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+section {
+  padding-top: 2rem;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  font-size: 1.125rem;
+}
+
+.link-list {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #e0e0e0;
+  list-style: none;
+}
+
+.link-list li {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.link-list a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  color: #ef6c35;
+  text-decoration: none;
+}
+
+.link-list span {
+  font-weight: 600;
+}
+
+.writing-page .link-list a,
+.oss-page .link-list a {
+  color: #333;
+}
+
+.writing-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 0;
+}
+
+.writing-titles {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.writing-titles a {
+  padding: 0;
+}
+
+.writing-titles .english-title {
+  color: #555;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.activity-type {
+  display: inline-block;
+  min-width: 2.75rem;
+  margin-right: 0.35rem;
+  padding: 0.1rem 0.3rem;
+  border: 1px solid currentcolor;
+  border-radius: 0.25rem;
+  font-size: 0.6875rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.activity-type-pr,
+.activity-type-issue {
+  color: #333;
+}
+
+.link-list small,
+.link-list time {
+  color: #555;
+  font-size: 0.8125rem;
+  text-align: right;
+}
+
+.link-list a:hover span,
+.back-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+.link-list a:focus-visible,
+.back-link:focus-visible {
+  border-radius: 0.25rem;
+  outline: 0.2rem solid #ef6c35;
+  outline-offset: 0.25rem;
 }
 
 @media (min-width: 40rem) {
   nav {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 30rem) {
+  .link-list a {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .link-list small,
+  .link-list time {
+    text-align: left;
+  }
+
+  .writing-item {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
 

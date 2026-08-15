@@ -1,0 +1,423 @@
+{
+  "writing": [
+    {
+      "title": "フロントエンドに広がりつつある OpenTelemetry：Browser SDK の現在地",
+      "englishTitle": "OpenTelemetry is expanding to the frontend: the current state of the Browser SDK",
+      "href": "https://zenn.dev/cybozu_frontend/articles/opentelemetry-browser-frontend",
+      "publishedAt": "2026-07-21T09:56:04.754+09:00"
+    },
+    {
+      "title": "kube-state-metrics で始める Kubernetes アラート：まず初めに導入したい PromQL クエリ集",
+      "englishTitle": "Getting started with Kubernetes alerts using kube-state-metrics: essential PromQL queries",
+      "href": "https://zenn.dev/nissy_dev/articles/kube-state-metrics-alert",
+      "publishedAt": "2026-01-15T18:55:57.763+09:00"
+    },
+    {
+      "title": "Jsonnet mixins で実現する環境別ブランチ運用からの脱却",
+      "englishTitle": "Moving away from environment-specific branches with Jsonnet mixins",
+      "href": "https://blog.cybozu.io/entry/2025/12/19/170000",
+      "publishedAt": "2025-12-19T17:00:00+09:00"
+    },
+    {
+      "title": "Go で Kubernetes のカスタムリソースを扱う方法を整理する",
+      "englishTitle": "Working with Kubernetes custom resources in Go",
+      "href": "https://zenn.dev/nissy_dev/articles/go-crd-operation",
+      "publishedAt": "2025-12-08T09:06:06.477+09:00"
+    },
+    {
+      "title": "NestJS で絡みあったモジュールの循環参照を整理する",
+      "englishTitle": "Untangling circular module dependencies in NestJS",
+      "href": "https://zenn.dev/ubie_dev/articles/bye-circular-deps",
+      "publishedAt": "2025-05-12T09:49:20.659+09:00"
+    },
+    {
+      "title": "Go で新しいサービスを実装する際に意識したポイント",
+      "englishTitle": "Key considerations when implementing a new service in Go",
+      "href": "https://blog.cybozu.io/entry/2025/04/14/100000",
+      "publishedAt": "2025-04-14T10:00:00+09:00"
+    },
+    {
+      "title": "モジュラモノリスにおける Prisma を利用した DB アクセスの秩序を保つ",
+      "englishTitle": "Maintaining order in Prisma database access in a modular monolith",
+      "href": "https://zenn.dev/ubie_dev/articles/nestjs-prisma-db-access-management",
+      "publishedAt": "2025-03-13T19:22:28.275+09:00"
+    },
+    {
+      "title": "テストの sharding を効率化する Tenbin というツールを作った",
+      "englishTitle": "Building Tenbin to improve test sharding efficiency",
+      "href": "https://zenn.dev/cybozu_frontend/articles/create-tenbin",
+      "publishedAt": "2024-12-15T11:05:05.542+09:00"
+    },
+    {
+      "title": "Cloudflare D1 を使った日本語の全文検索を実装する",
+      "englishTitle": "Implementing Japanese full-text search with Cloudflare D1",
+      "href": "https://zenn.dev/cybozu_frontend/articles/cloudflare-d1-fts",
+      "publishedAt": "2024-08-05T10:21:40.855+09:00"
+    },
+    {
+      "title": "アクセシビリティの改善のために React Aria を活用しています",
+      "englishTitle": "Using React Aria to improve accessibility",
+      "href": "https://blog.cybozu.io/entry/2024/05/22/090000",
+      "publishedAt": "2024-05-22T09:00:00+09:00"
+    },
+    {
+      "title": "Next.js 製アプリケーションの CI の実行時間削減や安定性向上のために取り組んだこと",
+      "englishTitle": "Reducing CI execution time and improving stability for a Next.js application",
+      "href": "https://blog.cybozu.io/entry/2024/04/08/100000",
+      "publishedAt": "2024-04-08T10:00:00+09:00"
+    },
+    {
+      "title": "2024年のロードマップ、新しいロゴとホームページの公開、v1.5.0のリリース",
+      "englishTitle": "The 2024 roadmap, new logo and website, and v1.5.0 release",
+      "href": "https://zenn.dev/cybozu_frontend/articles/biome-roadmap-2024",
+      "publishedAt": "2024-01-09T09:47:32.011+09:00"
+    },
+    {
+      "title": "Vite 5.0 のリリースなど : Cybozu Frontend Weekly (2023-11-21号)",
+      "englishTitle": "Vite 5.0 released and more: Cybozu Frontend Weekly, November 21, 2023",
+      "href": "https://zenn.dev/cybozu_frontend/articles/frontend_weekly_20231121",
+      "publishedAt": "2023-11-22T18:39:20.952+09:00"
+    },
+    {
+      "title": "Biome と ESLint の lint ルールの互換性",
+      "englishTitle": "Lint rule compatibility between Biome and ESLint",
+      "href": "https://zenn.dev/cybozu_frontend/articles/biome-eslint-compatibility",
+      "publishedAt": "2023-10-10T09:25:40.889+09:00"
+    },
+    {
+      "title": "TypeScript のドキュメンタリーの公開など : Cybozu Frontend Weekly (2023/09/26号)",
+      "englishTitle": "The TypeScript documentary released and more: Cybozu Frontend Weekly, September 26, 2023",
+      "href": "https://zenn.dev/cybozu_frontend/articles/frontend_weekly_20230926",
+      "publishedAt": "2023-09-29T09:17:11.423+09:00"
+    },
+    {
+      "title": "React 化した共通ヘッダーを kintone の全ページに適用しました！",
+      "englishTitle": "Rolling out the React-based shared header across all kintone pages",
+      "href": "https://blog.cybozu.io/entry/2023/08/29/101907",
+      "publishedAt": "2023-08-29T10:19:07+09:00"
+    },
+    {
+      "title": "Bun 1.0 がリリース予定など:: Cybozu Frontend Weekly (2023/08/15号)",
+      "englishTitle": "Bun 1.0 announced and more: Cybozu Frontend Weekly, August 15, 2023",
+      "href": "https://zenn.dev/cybozu_frontend/articles/frontend_weekly_20230815",
+      "publishedAt": "2023-08-17T09:47:48.028+09:00"
+    },
+    {
+      "title": "Rome の contributor からみた Oxc の印象",
+      "englishTitle": "A Rome contributor's perspective on Oxc",
+      "href": "https://zenn.dev/cybozu_frontend/articles/thinking-about-oxc",
+      "publishedAt": "2023-07-13T18:37:05.964+09:00"
+    },
+    {
+      "title": "Pages Router と App Router での i18n 対応の違い",
+      "englishTitle": "Differences in i18n support between the Pages Router and App Router",
+      "href": "https://zenn.dev/cybozu_frontend/articles/nextjs-i18n-app-router",
+      "publishedAt": "2023-06-30T12:50:37.364+09:00"
+    },
+    {
+      "title": "Next.js の App Router の最新状況など : Cybozu Frontend Weekly (2023/06/27号)",
+      "englishTitle": "The latest on the Next.js App Router and more: Cybozu Frontend Weekly, June 27, 2023",
+      "href": "https://zenn.dev/cybozu_frontend/articles/frontend_weekly_20230627",
+      "publishedAt": "2023-06-27T18:48:15.292+09:00"
+    },
+    {
+      "title": "オランダで開催された JS Nation と React Summit に参加してみた",
+      "englishTitle": "Attending JSNation and React Summit in the Netherlands",
+      "href": "https://zenn.dev/cybozu_frontend/articles/js-nation-and-react-summit-2023",
+      "publishedAt": "2023-06-13T21:44:24.496+09:00"
+    },
+    {
+      "title": "パフォーマンスが改善された Vite 4.3 のリリースなど : Cybozu Frontend Weekly (2023-04-25号)",
+      "englishTitle": "Vite 4.3 released with performance improvements and more: Cybozu Frontend Weekly, April 25, 2023",
+      "href": "https://zenn.dev/cybozu_frontend/articles/frontend_weekly_20230425",
+      "publishedAt": "2023-04-27T19:04:21.160+09:00"
+    },
+    {
+      "title": "Rome の core contributor になった",
+      "englishTitle": "Becoming a core contributor to Rome",
+      "href": "https://zenn.dev/cybozu_frontend/articles/become-a-core-contributor-of-rome",
+      "publishedAt": "2023-04-20T09:50:01.173+09:00"
+    },
+    {
+      "title": "React の新しい公式ドキュメントが公開されたなど : Cybozu Frontend Weekly (2023-03-28号)",
+      "englishTitle": "React's new official documentation released and more: Cybozu Frontend Weekly, March 28, 2023",
+      "href": "https://zenn.dev/cybozu_frontend/articles/frontend_weekly_20230328",
+      "publishedAt": "2023-03-30T15:27:32.490+09:00"
+    },
+    {
+      "title": "バンドルサイズに優しい tree shakeable なライブラリを作成する",
+      "englishTitle": "Building tree-shakeable libraries with smaller bundle sizes",
+      "href": "https://zenn.dev/nissy_dev/articles/how-to-make-tree-shakeable-libraries",
+      "publishedAt": "2022-12-17T09:00:00.276+09:00"
+    },
+    {
+      "title": "kintone の共通ヘッダー部分の React 化に責任を持つチームの紹介！",
+      "englishTitle": "Introducing the team responsible for rebuilding kintone's shared header in React",
+      "href": "https://blog.cybozu.io/entry/2022/11/18/120000",
+      "publishedAt": "2022-11-18T12:00:00+09:00"
+    },
+    {
+      "title": "新卒で飛び込んだフロントエンド刷新プロジェクトが学びだらけだった話",
+      "englishTitle": "What I learned by joining a frontend modernization project as a new graduate",
+      "href": "https://blog.cybozu.io/entry/2022/08/31/110000",
+      "publishedAt": "2022-08-31T11:00:00+09:00"
+    },
+    {
+      "title": "SWC plugin を作成して Next.js に導入してみた",
+      "englishTitle": "Building an SWC plugin and integrating it with Next.js",
+      "href": "https://zenn.dev/nissy_dev/articles/create-swc-plugin",
+      "publishedAt": "2022-07-01T09:00:00.127+09:00"
+    },
+    {
+      "title": "typescript-generatorを利用して、HTML に埋め込んだ JSON データをフロントエンドで型安全に扱う",
+      "englishTitle": "Using typescript-generator to handle JSON embedded in HTML with type safety on the frontend",
+      "href": "https://blog.cybozu.io/entry/2022/03/30/174250",
+      "publishedAt": "2022-03-30T17:42:50+09:00"
+    },
+    {
+      "title": "JavaのクラスからTypeScriptの型定義を生成するtypescript-generatorを使ってみた",
+      "englishTitle": "Generating TypeScript type definitions from Java classes with typescript-generator",
+      "href": "https://zenn.dev/nissy_dev/articles/typescript-generator",
+      "publishedAt": "2022-03-29T14:34:50.729+09:00"
+    },
+    {
+      "title": "標準化に向けて進んでいる Web Neural Network API について調べてみた",
+      "englishTitle": "Exploring the Web Neural Network API on its path to standardization",
+      "href": "https://zenn.dev/nissy_dev/articles/web-neural-network-api",
+      "publishedAt": "2021-12-22T09:36:04.042+09:00"
+    }
+  ],
+  "oss": [
+    {
+      "kind": "Issue",
+      "repo": "open-telemetry/opentelemetry-browser",
+      "title": "Add automated bundle size reporting on pull requests",
+      "href": "https://github.com/open-telemetry/opentelemetry-browser/issues/384",
+      "createdAt": "2026-08-10T01:34:01Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "cybozu/renovate-config",
+      "title": "move minimumReleaseAge settings",
+      "href": "https://github.com/cybozu/renovate-config/pull/324",
+      "createdAt": "2026-07-31T08:10:16Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "prettier/prettier",
+      "title": "chore: disable Yarn lifecycle scripts during install",
+      "href": "https://github.com/prettier/prettier/pull/19302",
+      "createdAt": "2026-06-07T09:06:32Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "open-telemetry/opentelemetry-browser",
+      "title": "chore: move ignore-scripts config to .npmrc",
+      "href": "https://github.com/open-telemetry/opentelemetry-browser/pull/308",
+      "createdAt": "2026-06-06T14:34:08Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "open-telemetry/opentelemetry-browser",
+      "title": "chore: skip lifecycle scripts during npm ci in workflows",
+      "href": "https://github.com/open-telemetry/opentelemetry-browser/pull/307",
+      "createdAt": "2026-06-06T00:38:53Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "cybozu/oxlint-config",
+      "title": "Set up automated release with release-please",
+      "href": "https://github.com/cybozu/oxlint-config/pull/1",
+      "createdAt": "2026-05-15T07:08:18Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "projectcontour/contour",
+      "title": "implement localJWKS documented in JWT verification design",
+      "href": "https://github.com/projectcontour/contour/pull/7502",
+      "createdAt": "2026-03-29T07:15:09Z"
+    },
+    {
+      "kind": "Issue",
+      "repo": "projectcontour/contour",
+      "title": "Feature request: implement localJWKS documented in JWT verification design",
+      "href": "https://github.com/projectcontour/contour/issues/7501",
+      "createdAt": "2026-03-29T03:07:49Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "grafana/faro-web-sdk",
+      "title": "feat(transport): support async dynamic headers in FetchTransport",
+      "href": "https://github.com/grafana/faro-web-sdk/pull/1932",
+      "createdAt": "2026-03-05T08:16:10Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "yannh/kubeconform",
+      "title": "fix: update duration validation to use strfmt package",
+      "href": "https://github.com/yannh/kubeconform/pull/348",
+      "createdAt": "2025-12-10T09:31:29Z"
+    },
+    {
+      "kind": "Issue",
+      "repo": "yannh/kubeconform",
+      "title": "'2w' is not valid duration",
+      "href": "https://github.com/yannh/kubeconform/issues/347",
+      "createdAt": "2025-12-10T08:24:45Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "cybozu/license-manager",
+      "title": "chore: remove node engine requirement from package.json",
+      "href": "https://github.com/cybozu/license-manager/pull/24",
+      "createdAt": "2025-11-13T04:21:39Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "cybozu/license-manager",
+      "title": "fix: update dependencies",
+      "href": "https://github.com/cybozu/license-manager/pull/22",
+      "createdAt": "2025-11-13T04:14:08Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "cybozu/license-manager",
+      "title": "chore: overhaul devdeps",
+      "href": "https://github.com/cybozu/license-manager/pull/21",
+      "createdAt": "2025-11-13T02:17:35Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "cybozu/stylelint-config",
+      "title": "chore: Revert \"chore(release): 0.3.2\"",
+      "href": "https://github.com/cybozu/stylelint-config/pull/79",
+      "createdAt": "2025-11-12T08:02:13Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "cybozu/stylelint-config",
+      "title": "chore: introduce release-please",
+      "href": "https://github.com/cybozu/stylelint-config/pull/76",
+      "createdAt": "2025-11-12T06:05:26Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "cybozu/stylelint-config",
+      "title": "chore: migrate from npm to pnpm",
+      "href": "https://github.com/cybozu/stylelint-config/pull/75",
+      "createdAt": "2025-11-12T04:53:15Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "cybozu/license-manager",
+      "title": "chore: add renovate setting",
+      "href": "https://github.com/cybozu/license-manager/pull/20",
+      "createdAt": "2025-11-11T08:52:56Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "cybozu/license-manager",
+      "title": "chore: introduce release-please",
+      "href": "https://github.com/cybozu/license-manager/pull/19",
+      "createdAt": "2025-11-11T08:30:48Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "cybozu/license-manager",
+      "title": "chore: migrate from npm to pnpm",
+      "href": "https://github.com/cybozu/license-manager/pull/18",
+      "createdAt": "2025-11-07T09:36:00Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "cybozu/eslint-config",
+      "title": "Revert \"chore(main): release 25.0.0\"",
+      "href": "https://github.com/cybozu/eslint-config/pull/934",
+      "createdAt": "2025-11-07T07:06:13Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "cybozu/eslint-config",
+      "title": "Revert \"chore(main): release 25.0.0\"",
+      "href": "https://github.com/cybozu/eslint-config/pull/930",
+      "createdAt": "2025-11-07T06:54:21Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "cybozu/eslint-config",
+      "title": "chore: migrate standard-version to release-please",
+      "href": "https://github.com/cybozu/eslint-config/pull/924",
+      "createdAt": "2025-11-06T09:42:55Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "pnpm/pnpm",
+      "title": "fix: omit the major version matching restriction when filtering latest dist-tags in pkg metadata",
+      "href": "https://github.com/pnpm/pnpm/pull/10130",
+      "createdAt": "2025-10-27T12:24:48Z"
+    },
+    {
+      "kind": "Issue",
+      "repo": "pnpm/pnpm",
+      "title": "minimumReleaseAge fails to fallback when a new major version is released",
+      "href": "https://github.com/pnpm/pnpm/issues/10100",
+      "createdAt": "2025-10-16T01:40:27Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "cybozu/eslint-config",
+      "title": "chore: migrate from npm to pnpm",
+      "href": "https://github.com/cybozu/eslint-config/pull/916",
+      "createdAt": "2025-10-14T02:03:24Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "cybozu/license-manager",
+      "title": "fix: update version handling in getDependenciesForPnpm",
+      "href": "https://github.com/cybozu/license-manager/pull/14",
+      "createdAt": "2025-08-06T00:45:56Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "webpro-nl/knip",
+      "title": "feat: add prisma plugin",
+      "href": "https://github.com/webpro-nl/knip/pull/1073",
+      "createdAt": "2025-05-06T09:10:23Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "Quramy/prisma-fabbrica",
+      "title": "feat: support new prisma client generator",
+      "href": "https://github.com/Quramy/prisma-fabbrica/pull/462",
+      "createdAt": "2025-05-06T06:32:19Z"
+    },
+    {
+      "kind": "PR",
+      "repo": "prisma/prisma",
+      "title": "fix(config): use jiti to load prisma.config.ts",
+      "href": "https://github.com/prisma/prisma/pull/27075",
+      "createdAt": "2025-05-03T09:25:39Z"
+    },
+    {
+      "kind": "Issue",
+      "repo": "prisma/language-tools",
+      "title": "Support disabling Prisma LSP diagnostics",
+      "href": "https://github.com/prisma/language-tools/issues/1827",
+      "createdAt": "2025-04-27T13:11:36Z"
+    },
+    {
+      "kind": "Issue",
+      "repo": "prisma/language-tools",
+      "title": "Support custom path for prisma.config.ts",
+      "href": "https://github.com/prisma/language-tools/issues/1826",
+      "createdAt": "2025-04-27T11:11:00Z"
+    },
+    {
+      "kind": "Issue",
+      "repo": "prisma/prisma",
+      "title": "Support glob patterns in schema option for prismaSchemaFolder",
+      "href": "https://github.com/prisma/prisma/issues/26989",
+      "createdAt": "2025-04-26T15:07:30Z"
+    }
+  ]
+}
