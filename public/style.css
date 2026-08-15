@@ -54,14 +54,18 @@ h1 {
 
 nav {
   display: grid;
-  width: min(100%, 42rem);
+  width: min(100%, 24rem);
   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 0.75rem 1.5rem;
 }
 
 nav a {
-  padding: 1.25rem 1rem;
+  padding: 0.125rem 0.25rem;
   color: #ef6c35;
-  font-weight: 650;
+  font-size: 1.125rem;
+  font-weight: 700;
   text-align: center;
   text-decoration-thickness: 0.1em;
   text-underline-offset: 0.35em;
@@ -197,6 +201,10 @@ h2 {
   text-align: right;
 }
 
+.link-list time {
+  white-space: nowrap;
+}
+
 .link-list a:hover span,
 .back-link:hover {
   text-decoration: underline;
@@ -212,7 +220,13 @@ h2 {
 
 @media (min-width: 40rem) {
   nav {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    width: auto;
+    gap: 2rem;
+  }
+
+  nav a {
+    white-space: nowrap;
   }
 }
 

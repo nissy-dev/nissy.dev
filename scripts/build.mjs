@@ -61,17 +61,16 @@ const googleTranslateUrl = (href) => {
 
 const renderItems = (items, pageName) =>
   items
-    .map(
-      (item) =>
-        pageName === "writing"
-          ? `          <li class="writing-item">
+    .map((item) =>
+      pageName === "writing"
+        ? `          <li class="writing-item">
             <div class="writing-titles">
               <a href="${escapeHtml(item.href)}"><span>${escapeHtml(item.title)}</span></a>
               <a class="english-title" href="${escapeHtml(googleTranslateUrl(item.href))}">${escapeHtml(item.englishTitle)}</a>
             </div>
             <time datetime="${escapeHtml(item.publishedAt)}">${escapeHtml(formatDate(item.publishedAt))}</time>
           </li>`
-          : `          <li>
+        : `          <li>
             <a href="${escapeHtml(item.href)}">
               <span><b class="activity-type activity-type-${item.kind.toLowerCase()}">${escapeHtml(item.kind)}</b> ${escapeHtml(item.repo)}: ${escapeHtml(item.title)}</span>
               <time datetime="${escapeHtml(item.createdAt)}">${escapeHtml(formatDate(item.createdAt))}</time>
