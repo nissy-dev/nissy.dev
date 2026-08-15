@@ -1,9 +1,0 @@
-{
-    "buildCommand": null,
-    "devCommand": null,
-    "framework": null,
-    "outputDirectory": ".",
-    "rewrites": [
-        { "source": "/", "destination": "/api/render" }
-    ]
-}

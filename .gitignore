@@ -1,5 +1,1 @@
-target
-.envrc
-node_modules
 .vercel
-public/style.css

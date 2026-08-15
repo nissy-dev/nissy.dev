@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  line-height: 1.5;
+  color: #431407;
+  background: #fffaf5;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+}
+
+.portrait {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 35px rgb(67 20 7 / 18%);
+}
+
+h1 {
+  margin: 2rem 0 0;
+  color: #c2410c;
+  font-size: 2.25rem;
+  line-height: 1.1;
+}
+
+.intro {
+  max-width: 38rem;
+  margin: 1.5rem 0;
+  color: #c2410c;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+nav {
+  display: grid;
+  width: min(100%, 34rem);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+nav a {
+  padding: 1.25rem 1rem;
+  color: #c2410c;
+  font-weight: 650;
+  text-align: center;
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.35em;
+}
+
+nav a:hover {
+  color: #7c2d12;
+}
+
+nav a:focus-visible {
+  border-radius: 0.25rem;
+  outline: 0.2rem solid #fb923c;
+  outline-offset: 0.15rem;
+}
+
+@media (min-width: 40rem) {
+  nav {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  nav a {
+    transition: color 150ms ease;
+  }
+}
