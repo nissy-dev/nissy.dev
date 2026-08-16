@@ -289,13 +289,6 @@
     {
       "kind": "PR",
       "repo": "cybozu/stylelint-config",
-      "title": "chore: Revert \"chore(release): 0.3.2\"",
-      "href": "https://github.com/cybozu/stylelint-config/pull/79",
-      "createdAt": "2025-11-12T08:02:13Z"
-    },
-    {
-      "kind": "PR",
-      "repo": "cybozu/stylelint-config",
       "title": "chore: introduce release-please",
       "href": "https://github.com/cybozu/stylelint-config/pull/76",
       "createdAt": "2025-11-12T06:05:26Z"
@@ -327,20 +320,6 @@
       "title": "chore: migrate from npm to pnpm",
       "href": "https://github.com/cybozu/license-manager/pull/18",
       "createdAt": "2025-11-07T09:36:00Z"
-    },
-    {
-      "kind": "PR",
-      "repo": "cybozu/eslint-config",
-      "title": "Revert \"chore(main): release 25.0.0\"",
-      "href": "https://github.com/cybozu/eslint-config/pull/934",
-      "createdAt": "2025-11-07T07:06:13Z"
-    },
-    {
-      "kind": "PR",
-      "repo": "cybozu/eslint-config",
-      "title": "Revert \"chore(main): release 25.0.0\"",
-      "href": "https://github.com/cybozu/eslint-config/pull/930",
-      "createdAt": "2025-11-07T06:54:21Z"
     },
     {
       "kind": "PR",
